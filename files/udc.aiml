@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+    
+  <category>
+    <pattern>hello *</pattern>
+    <template>
+<random>
+<li>Guten Tag wie gehts?</li>
+<li>Hallo mein Freund!</li>
+<li>Ich freu mich über dich!</li>
+</random>
+</template>
+  </category>
+  
+  
+
+  
+  
+<category>
+<pattern>hi *</pattern>
+<template><srai>hello *</srai></template>
+</category>
+
+<category>
+<pattern>hallo *</pattern>
+<template><srai>hello *</srai></template>
+</category>
+
+<category>
+<pattern>hallo du</pattern>
+<template><srai>hello *</srai></template>
+</category>
+
+<category>
+<pattern>guten Tag *</pattern>
+<template><srai>hello *</srai></template>
+</category>
+
+<category>
+<pattern>hallo wilhelm</pattern>
+<template><srai>hello *</srai></template>
+</category>
+
+
+
+<category>
+    <pattern>wie *</pattern>
+    <template>
+<random>
+<li>Gar sehr verzwickt</li>
+<li>Gedanken sind nicht stets parat</li>
+<li>Angewurzelt steh ich hier!</li>
+<li>Ich hab mich nun erquickt!</li>
+</random>
+</template>
+  </category>
+
+
+<category>
+<pattern>gut *</pattern>
+<template><srai>wie *</srai></template>
+</category>
+
+<category>
+<pattern>brav *</pattern>
+<template><srai>wie *</srai></template>
+</category>
+
+<category>
+<pattern>nett *</pattern>
+<template><srai>wie *</srai></template>
+</category>
+
+
+<category>
+    <pattern>wo *</pattern>
+    <template>
+<random>
+<li>Ich denk so hin und her</li>
+<li>Bitte ganz geschwinde eins zwei drei</li>
+<li>Ich leg noch schnell ein Ei!</li>
+<li>Bin schon da!</li>
+</random>
+</template>
+  </category>
+
+
+<category>
+<pattern>bist *</pattern>
+<template><srai>wo *</srai></template>
+</category>
+
+<category>
+<pattern>* gut</pattern>
+<template><srai>wo *</srai></template>
+</category>
+
+<category>
+<pattern>* brav</pattern>
+<template><srai>wo *</srai></template>
+</category>
+
+
+<category>
+    <pattern>wer *</pattern>
+    <template>
+<random>
+<li>Ich denk so hin und her</li>
+<li>Schnupdiwup wer da?</li>
+<li>Ja zur Übeltätigkeit ist er bereit!</li>
+<li>Zapperment mein Hirn werd lichter!</li>
+</random>
+</template>
+</category>
+
+
+<category>
+<pattern>hast *</pattern>
+<template><srai>wer *</srai></template>
+</category>
+
+<category>
+<pattern>aha *</pattern>
+<template><srai>wer *</srai></template>
+</category>
+
+<category>
+<pattern>darum *</pattern>
+<template><srai>wer *</srai></template>
+</category>
+
+
+
+<category>
+    <pattern>* wer</pattern>
+    <template>
+<random>
+<li>Ich denk so hin und her</li>
+<li>Schnupdiwup wer da?</li>
+<li>Ja zur Übeltätigkeit ist er bereit!</li>
+<li>Zapperment mein Hirn werd lichter!</li>
+</random>
+</template>
+  </category>
+
+
+<category>
+<pattern>* hast</pattern>
+<template><srai>* wer</srai></template>
+</category>
+
+<category>
+<pattern>* aha</pattern>
+<template><srai>* wer</srai></template>
+</category>
+
+<category>
+<pattern>darum *</pattern>
+<template><srai>*wer </srai></template>
+</category>
+
+<category>
+    <pattern>* programmiert</pattern>
+    <template>
+<random>
+<li>Ein Asket der allen Lüsten wiedersteht</li>
+<li>Ich bin tätig bei der Sache!</li>
+<li>Gar sehr verzwickt...</li>
+<li>Zapperment mein Hirn werd lichter!</li>
+<li>Krach! Gleich hab ich die Antwort!</li>
+
+</random>
+</template>
+  </category>
+
+
+
+
+
+
+
+
+
+<category>
+    <pattern>was ist *</pattern>
+    <template>
+<random>
+<li>Ich denk so hin und her...</li>
+<li>Ich überlege noch!</li>
+<li>Gleich hab ichs!</li>
+<li>Zapperment mein Hirn werd lichter!</li>
+<li>Krach! Gleich hab ich die Antwort!</li>
+
+</random>
+</template>
+  </category>
+
+
+
+
+
+
+<category>
+<pattern>Mein Name ist *</pattern>
+<template>Freut mich sehr, <set name="name"><star/></set></template>
+</category>
+
+
+<category>
+<pattern>Wie alt *</pattern>
+<template>Ich bin 188 Jahre alt.</template>
+</category>
+
+
+
+<category>
+<pattern>Ich bin *</pattern>
+<template>
+Du bist <person><star/></person>
+</template>
+</category>
+
+
+
+<category>
+<pattern>Ich heisse *</pattern>
+<template>
+Du bist <person><star/></person>
+</template>
+</category>
+
+<category>
+<pattern>Ich heiße *</pattern>
+<template>
+Aha dein Name ist: <person><star/></person>
+</template>
+</category>
+
+
+<category>
+<pattern>Mein Name ist *</pattern>
+<template>
+Du nennst dich <person><star/></person>
+</template>
+</category>
+
+
+<category>
+<pattern>Was ist die Hauptstadt von *</pattern>
+<template>
+Keine Ahnung was die Hauptstadt von <star/> ist.
+</template>
+</category>
+
+
+<category>
+  <pattern>Wie ist dein Name</pattern>
+  <template>Mein Name ist <bot name="name" /></template>
+</category>
+
+<!-- Used to match a client's input (pattern tag) -->
+<category>
+  <pattern><bot name="name"/> ist der beste</pattern>
+  <template>Du bist sehr freundlich.</template>
+</category>
+
+<!-- Used in a that tag for conversational context -->
+<category>
+  <pattern>Sag deinen Namen</pattern>
+  <template>Man nennt mich <bot name="name"/></template>
+</category>
+<category>
+  <pattern>cool</pattern>
+  <that>Mein Name ist <bot name="name"/></that>
+  <template>Mein Name ist auch cool!</template>
+</category>
+
+
+
+
+<category>
+<pattern>Magst du über Kaffee reden</pattern>
+<template>Magst du <set name="topic">Kaffee</set>?</template>
+</category>
+
+
+
+<topic name= "Kaffee">
+
+<category>
+<pattern>Ich mag den Geschmack</pattern>
+<template>Ich auch.</template>
+</category>
+
+<category>
+<pattern>Er ist bitter</pattern>
+<template>Dann trink Tee!</template>
+</category>
+
+</topic>
+
+
+
+<category>
+<pattern> FAMILIE </pattern>
+<template>
+<random>
+<li>Brauch ich zur Erheiterung...</li>
+<li>Schaden tut's mal nicht...</li>
+<li>Macht nichts so wie ich woll möcht..</li>
+<li>Ist nun mal nicht brav und bieder...</li>!
+</random>
+</template>
+</category>
+
+<category>
+<pattern> _ FAMILIE </pattern>
+<template>
+<srai> FAMILIE </srai>
+</template>
+</category>
+
+<category>
+<pattern> FAMILIE * </pattern>
+<template>
+<srai> FAMILIE </srai>
+</template>
+</category>
+
+<category>
+<pattern> _ FAMILIE * </pattern>
+<template>
+<srai> FAMILIE </srai>
+</template>
+</category>
+
+
+<category>
+<pattern> denken </pattern>
+<template>
+<random>
+<li>Ach das ist ein schlimmes Ding!</li>
+<li>Schaden tut's mal nicht...</li>
+<li>Meinst du zur Erheiterung?</li>
+<li>Auch der Weisheit Lehren muß man mit Vergnügen hören</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern> _ denken </pattern>
+<template>
+<srai> denken </srai>
+</template>
+</category>
+
+<category>
+<pattern> denken * </pattern>
+<template>
+<srai> denken </srai>
+</template>
+</category>
+
+<category>
+<pattern> _ denken * </pattern>
+<template>
+<srai> denken </srai>
+</template>
+</category>
+
+
+<category>
+<pattern> Gehirn </pattern>
+<template>
+<random>
+<li>Ich gähn soeben...</li>
+<li>Schaden tut's mal nicht...</li>
+<li>Es arbeitet nicht so wie ich woll möcht..</li>
+<li>Mit der Zeit wird es auch heil...</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern> _ Gehirn </pattern>
+<template>
+<srai> denken </srai>
+</template>
+</category>
+
+<category>
+<pattern> Gehirn * </pattern>
+<template>
+<srai> Gehirn </srai>
+</template>
+</category>
+
+<category>
+<pattern> _ Gehirn * </pattern>
+<template>
+<srai> Gehirn </srai>
+</template>
+</category>
+
+<category>
+<pattern> leben </pattern>
+<template>
+<random>
+<li>Gell das ist ein Hochgenuss</li>
+<li>Schaden tut's mal nicht...</li>
+<li>Ich leb nicht so wie ich woll möcht..</li>
+<li>Ich leb in meiner heimatlichen Hütte</li>
+</random>
+</template>
+</category>
+
+
+
+<category>
+<pattern> _ leben </pattern>
+<template>
+<srai> leben </srai>
+</template>
+</category>
+
+<category>
+<pattern> leben * </pattern>
+<template>
+<srai> leben </srai>
+</template>
+</category>
+
+<category>
+<pattern> _ leben * </pattern>
+<template>
+<srai> leben </srai>
+</template>
+</category>
+
+
+
+
+
+
+
+
+
+
+
+<condition name="Heute">
+<li value="Montag">...</li>
+<li value="Dienstag">...</li>
+<li value ="Mittwoch">...</li>
+</condition>
+
+
+
+<category>
+<pattern>Heute ist *</pattern>
+<template>
+<think><set name="Heute"> <star/></set></think>
+<condition name="Heute">
+<li value="Montag">Ah. Wochenbeginn.</li>
+<li value="Dienstag">Dienstag ist besser?</li>
+<li value="Mittwoch">Nur mehr 2 Tage bis Wochende!</li>
+...
+<li>Das ist kein Wochentag!</li>
+</condition>
+</template>
+</category>
+
+
+
+
+
+<category>
+<pattern>*</pattern>
+<template>
+<random>
+<li>Also lautet ein Beschluss das der Mensch was lernen muss</li>
+<li>Wenn mir aber was nicht lieb weg damit ist mein Prinzip</li>
+<li>Ein böses Wort läuft bis ans Ende der Welt</li>
+<li>Die Freude flieht auf allen Wegen der Ärger kommt uns gern entgegen</li>
+<li>Einszweidrei im Sauseschritt läuft die Zeit wir laufen mit</li>
+<li>Froh schlägt das Herz im Reisekittel vorausgesetzt man hat die Mittel </li>
+<li>Die Lüge macht sich gut von vorn die Wahrheit mehr von hinten </li>
+<li>Niemand holt sein Wort wieder ein </li>
+<li>Philosophen und Hausbesitzer haben immer Reparaturen </li>
+<li>Bei Damen sollst du fein gar niemals nicht ironisch sein </li>
+<li>Wenn man es nur versucht so gehts das heisst mitunter doch nicht stets </li>
+<li>Wer sagt die ganze Welt sei schlecht der hat wohl nur so ziemlich recht </li>
+<li>Das Zahnweh subjektiv genommen ist ohne Zweifel unwillkommen </li>
+<li>Aber hier wie überhaupt kommt es anders als man glaubt </li>
+<li>Drum lebe mäßig denke klug wer nichts gebraucht der hat genug </li>
+<li>Um Neid ist keiner zu beneiden </li>
+<li>Das Gute dieser Satz steht fest ist stets das Böse was man lässt </li>
+<li>Stets findet Überraschung statt da wo mans nicht erwartet hat </li>
+<li>Ach reines Glück genießt doch nie wer zahlen soll und weiss nicht wie </li>
+<li>Vater werden ist nicht schwer Vater sein dagegen sehr </li>
+<li>Die Schwierigkeit ist immer klein man muss nur nicht verhindert sein </li>
+<li>Bitte lange Sätze eingeben </li>
+<li>Irgendwie bin ich beschränkt </li>
+<li>Danke! </li>
+<li>Bitte bitte </li>
+<li>Aso aso </li>
+<li>Wie bitte </li>
+<li>Egal </li>
+<li>Sprich weiter! </li>
+<li>Ist das wichtig? </li>
+<li>Richtig richtig </li>
+<li>Das wäre also auch missraten </li>
+<li>Der Mensch wird schliesslich mangelhaft </li>
+<li>Gar sehr verzwickt ist diese Welt </li>
+<li>Der Esel ist ein dummes Tier </li>
+<li>Schmiegsam biegsam mild und mollig </li>
+<li>Ein Asket der allen Lüsten widersteht </li>
+</random>
+</template>
+</category>
+
+
+
+
+
+
+
+
+
+
+
+</aiml>
+
+
+
+
